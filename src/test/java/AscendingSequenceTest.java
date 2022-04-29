@@ -9,24 +9,24 @@ public class AscendingSequenceTest {
         as = new AscendingSequence();
     }
 
-    @Order(1)
-    @RepeatedTest(50)
-    @Test
+//    @Order(1)
+//    @RepeatedTest(50)
+//    @Test
 
-    public void testAscendingSequenceHappyPath() {
-        //0, 1, 2, 3, 4, 5
-        int start = 0;
-        int end = 5;
-        int step = 1;
-        int[] expectedResult = {0, 1, 2, 3, 4, 5};
-
-        AscendingSequence as = new AscendingSequence();
-        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
-
-        //Assertions.assertArrayEquals(expectedResult, actualResult);
-
-
-    }
+//    public void testAscendingSequenceHappyPath() {
+//        //0, 1, 2, 3, 4, 5
+//        int start = 0;
+//        int end = 5;
+//        int step = 1;
+//        int[] expectedResult = {0, 1, 2, 3, 4, 5};
+//
+//        AscendingSequence as = new AscendingSequence();
+//        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
+//
+//        //Assertions.assertArrayEquals(expectedResult, actualResult);
+//
+//
+//    }
     @Order(3)
 
     @Test
@@ -75,21 +75,21 @@ public class AscendingSequenceTest {
 
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
-    @Order(4)
-
-    @Test
-    public void testAscendingSequenceHappyPathNegativePositiveNumber() {
-        //
-        int start = -5;
-        int end = 5;
-        int step = 2;
-        int[] expectedResult = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
-
-        AscendingSequence as = new AscendingSequence();
-        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
-
-        Assertions.assertArrayEquals(expectedResult, actualResult);
-    }
+//    @Order(4)
+//
+//    @Test
+//    public void testAscendingSequenceHappyPathNegativePositiveNumber() {
+//        //
+//        int start = -5;
+//        int end = 5;
+//        int step = 2;
+//        int[] expectedResult = {-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5};
+//
+//        AscendingSequence as = new AscendingSequence();
+//        int[] actualResult = as.ascendingSequenceAlgorithm(start, end, step);
+//
+//        Assertions.assertArrayEquals(expectedResult, actualResult);
+//    }
     @Order(6)
     @Test
     public void testAscendingSequenceStepIsZer0() {
